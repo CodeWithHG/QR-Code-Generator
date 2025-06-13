@@ -1,23 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Document</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>QR Code Generator | Naman Sachdeva</title>
+
+  <!-- ✅ SEO Meta Tags -->
+  <meta name="description" content="Generate your own custom QR Code instantly with this free and responsive QR Code Generator built by Naman using HTML, CSS & JavaScript.">
+  <meta name="keywords" content="QR Code, Generator, Free, Online, HTML CSS JS, Naman Sachdeva, Web Tool, No Backend">
+  <meta name="author" content="Naman Sachdeva">
+
+  <!-- ✅ Social Preview -->
+  <meta property="og:title" content="Free QR Code Generator by Naman" />
+  <meta property="og:description" content="Generate QR Codes instantly for any text or link. Clean, fast & free!" />
+  <meta property="og:image" content="https://naman9104.github.io/qr-code-generator/preview.png" />
+  <meta property="og:url" content="https://naman9104.github.io/qr-code-generator/" />
+  <meta name="twitter:card" content="summary_large_image" />
+
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-     <div class="container">
-    <h1>Qr Code Generator</h1>
-    <input type="text" id="linkInput" placeholder="Enter your URL">
-    <button onclick="generateQR()">Genrate QR code</button>
-    <div id="qrbox">
-    <img id="qrImage"src="" alt="Qr code wil appear here">
-    <div class="Download">
-    <button onclick="downloadQR()">Download QR</button>
-</div>
+  <div class="container">
+    <h1>QR Code Generator</h1>
+    <input type="text" id="linkInput" placeholder="Enter your URL or text" aria-label="QR input" />
+    <button onclick="generateQR()">Generate QR Code</button>
+
+    <div id="qrBox">
+      <img id="qrImage" src="" alt="QR Code will appear here" />
+      <div class="download">
+        <button onclick="downloadQR()">Download QR</button>
+      </div>
     </div>
-</div>
-<script src="script.js"></script>
+  </div>
+
+  <script src="script.js"></script>
 </body>
 </html>
